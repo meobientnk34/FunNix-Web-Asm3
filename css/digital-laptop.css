@@ -1,0 +1,112 @@
+@media only screen and (min-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    border: 12px solid #0000ff;
+  }
+  .box {
+    border: 6px solid #0000ff;
+    padding-left: 12px;
+  }
+  .box h2 {
+    color: #0000ff;
+    padding: 12px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.2);
+  }
+  .box p {
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  /* GOALS */
+  .box-1 {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 12px solid #0000ff;
+    padding-bottom: 60px;
+  }
+  .goal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    padding: 12px 24px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.2);
+  }
+
+  /* SCOPES */
+  .box-2 {
+    grid-row: 2/ -1;
+  }
+  .box-2 .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 12px;
+  }
+  .box-2 h3 {
+    font-size: 32px;
+  }
+  .box-2 .in,
+  .out {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 24px 60px 0;
+    line-height: 1.5;
+    gap: 18px;
+  }
+  /* TEAM */
+  .box-3 {
+    border-bottom: 8px solid #0000ff;
+  }
+  .member {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    padding: 12px;
+  }
+  .box-3 h5 {
+    padding-bottom: 12px;
+  }
+  /* PRIMARY */
+  .box-4 {
+    padding-bottom: 48px;
+  }
+  .primary-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    padding: 12px;
+  }
+  /* TIMELINE */
+  .box-5 {
+    grid-row: 1/ -1;
+    grid-column: 3/ -1;
+  }
+  .box-5 .timeline-row {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+  }
+  .box-5 .dashed {
+    border-bottom: 1px dashed gray;
+    padding: 12px;
+  }
+  .box-5 span {
+    color: #fff;
+    padding: 8px;
+    border: 1px solid gray;
+    background-color: violet;
+    border-radius: 50%;
+    margin: 12px;
+  }
+}
